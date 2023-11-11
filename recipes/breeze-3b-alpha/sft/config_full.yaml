@@ -3,6 +3,7 @@ model_name_or_path: stabilityai/stablelm-3b-4e1t
 model_revision: main
 torch_dtype: bfloat16
 use_flash_attention_2: true
+trust_remote_code: true
 
 # Data training arguments
 dataset_mixer:
