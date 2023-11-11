@@ -1,7 +1,7 @@
 # Model arguments
-model_name_or_path: mistralai/Mistral-7B-v0.1
+model_name_or_path: stabilityai/stablelm-3b-4e1t
 torch_dtype: auto
-use_flash_attention_2: true
+use_flash_attention_2: false
 
 # LoRA arguments
 use_peft: true
@@ -30,7 +30,7 @@ gradient_accumulation_steps: 128
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
-hub_model_id: zephyr-7b-sft-lora
+hub_model_id: AsklyAITeam/breeze_3b_alpha
 hub_strategy: every_save
 learning_rate: 2.0e-05
 log_level: info
@@ -40,7 +40,7 @@ lr_scheduler_type: cosine
 max_seq_length: 2048
 max_steps: -1
 num_train_epochs: 1
-output_dir: data/zephyr-7b-sft-lora
+output_dir: data/breeze_3b_alpha-sft-lora
 overwrite_output_dir: true
 per_device_eval_batch_size: 8
 per_device_train_batch_size: 4
